@@ -7,7 +7,8 @@ Funcionalidades
 - 🚗 **Distância**: Km ↔ Milhas  
 - ⚖️ **Peso**: Kg ↔ Libras
 
-- 🚀 Melhorias Futuras
+ 
+ -Melhorias Futuras
 
  Criar interface gráfica (Tkinter)
 
