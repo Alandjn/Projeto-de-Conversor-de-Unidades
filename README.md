@@ -15,3 +15,12 @@ Funcionalidades
  Adicionar novas conversões (tempo, área, volume)
 
  Criar versão web com Flask ou Django
+
+ -Tecnologias Utilizadas
+
+  Python 3.x (sem bibliotecas externas)
+
+ -Autor
+ LinkedIn: https://www.linkedin.com/in/alan-de-jesus-175150180
+
+ GitHub: github.com/Alandjn
