@@ -1,0 +1,59 @@
+def celsius_para_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def fahrenheit_para_celsius(f):
+    return (f - 32) * 5/9
+
+def km_para_milhas(km):
+    return km * 0.621371
+
+def milhas_para_km(milhas):
+    return milhas / 0.621371
+
+def kg_para_libras(kg):
+    return kg * 2.20462
+
+def libras_para_kg(lb):
+    return lb / 2.20462
+
+
+def menu():
+    print("\n🔄 Conversor de Unidades 🔄")
+    print("1. Celsius → Fahrenheit")
+    print("2. Fahrenheit → Celsius")
+    print("3. Km → Milhas")
+    print("4. Milhas → Km")
+    print("5. Kg → Libras")
+    print("6. Libras → Kg")
+    print("0. Sair")
+
+
+if __name__ == "__main__":
+    while True:
+        menu()
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "0":
+            print("Saindo... 👋")
+            break
+
+        try:
+            valor = float(input("Digite o valor a converter: "))
+
+            if opcao == "1":
+                print(f"{valor}°C = {celsius_para_fahrenheit(valor):.2f}°F")
+            elif opcao == "2":
+                print(f"{valor}°F = {fahrenheit_para_celsius(valor):.2f}°C")
+            elif opcao == "3":
+                print(f"{valor} km = {km_para_milhas(valor):.2f} mi")
+            elif opcao == "4":
+                print(f"{valor} mi = {milhas_para_km(valor):.2f} km")
+            elif opcao == "5":
+                print(f"{valor} kg = {kg_para_libras(valor):.2f} lb")
+            elif opcao == "6":
+                print(f"{valor} lb = {libras_para_kg(valor):.2f} kg")
+            else:
+                print("❌ Opção inválida!")
+
+        except ValueError:
+            print("❌ Por favor, digite um número válido.")
